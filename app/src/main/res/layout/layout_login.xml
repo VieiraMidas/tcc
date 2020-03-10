@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login_activity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/itachi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="Insira o e-mail"
+        android:textColor="#FFFF"
+        android:textSize="30sp"></TextView>
+
+
+    <EditText
+        android:id="@+id/txtemaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/desenho"
+        android:textsize="30sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="Insira a senha"
+        android:textColor="#FFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtsenhalogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/desenho"
+        android:textsize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caso nao tenha uma conta cadatre-se."
+        android:textSize="20sp"
+        android:textColor="#FFFF"/>
+
+
+</LinearLayout>
