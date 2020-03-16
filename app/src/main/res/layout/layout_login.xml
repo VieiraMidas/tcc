@@ -21,59 +21,54 @@
             android:src="@drawable/itachi"
             android:layout_marginBottom="25dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:text="Insira o e-mail"
-            android:textColor="#FFFF"
-            android:textSize="30sp"></TextView>
-
-
         <EditText
             android:id="@+id/txtemaillogin"
+            android:hint="Insira o seu email"
+            android:textColorHint="@color/BrancoTranparente"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@drawable/desenho"
-            android:textsize="30sp"
-            android:layout_marginBottom="10dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill_horizontal"
-            android:text="Insira a senha"
-            android:textColor="#FFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginBottom="30dp"/>
 
         <EditText
             android:id="@+id/txtsenhalogin"
+            android:hint="Insira a sua senha"
+            android:textColorHint="@color/BrancoTranparente"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@drawable/desenho"
-            android:textsize="30sp"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Caso não tenha uma conta"
-            android:textColor="#FFFF"
+            android:text="Caso não tenha uma conta "
+            android:textColor="@color/Branco"
             android:textSize="20sp" />
             <TextView
                 android:id="@+id/txtCadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" cadastre-se."
-                android:textColor="#FFFF"
+                android:text="@string/cadastre_se"
+                android:textColor="@color/Branco"
                 android:textSize="20sp"
-                android:clickable="true"/>
+                android:onClick="abrir_cadastrar_activity"/>
         </LinearLayout>
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:background="@color/colorAccent"
+            android:textSize="30sp"
+            android:layout_marginBottom="30dp"/>
     </LinearLayout>
 
 </LinearLayout>
