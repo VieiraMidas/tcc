@@ -8,57 +8,64 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="4dp"
-        android:theme="@style/AppTheme"
-        app:popupTheme="@style/AppTheme">
-
-        <ImageButton
-            android:id="@+id/btnSaida"
-            android:layout_width="40dp"
-            android:layout_height="65dp"
-            android:background="@drawable/porta" />
-
-        <ImageButton
-            android:id="@+id/btnBolinhas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="320dp"
-            android:background="@drawable/ic_bolinhas"
-            android:padding="20dp" />
-
-    </androidx.appcompat.widget.Toolbar>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
-            android:gravity="center_horizontal"
-            android:text="Toque para utilizar sua Câmera"
-            android:textColor="#FFFF"
-            android:textSize="30sp" />
+            android:elevation="4dp"
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme">
 
-        <ImageButton
-            android:id="@+id/btnQRCode"
-            android:layout_width="270dp"
-            android:layout_height="270dp"
-            android:layout_gravity="center"
-            android:background="@drawable/circulo" />
+            <ImageButton
+                android:id="@+id/btnSaida"
+                android:layout_width="40dp"
+                android:layout_height="65dp"
+                android:background="@drawable/porta" />
+
+            <ImageButton
+                android:id="@+id/btnBolinhas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:background="@drawable/ic_bolinhas"
+                android:padding="20dp" />
+
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:gravity="center_horizontal"
+                android:text="Toque para utilizar sua Câmera"
+                android:textColor="@color/Branco"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/btnQRCode"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circulo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
 
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
