@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Cadastrar_Activity extends AppCompatActivity {
 
@@ -21,6 +22,8 @@ public class Cadastrar_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Login_activity.class));
+
+                Toast.makeText(getApplicationContext(), "Cadastro feito com sucesso",Toast.LENGTH_SHORT).show();
             }
         });
     }

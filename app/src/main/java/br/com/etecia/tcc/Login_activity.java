@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login_activity extends AppCompatActivity {
 
@@ -24,6 +25,8 @@ public class Login_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
+
+                Toast.makeText(getApplicationContext(), "Logado com êxito", Toast.LENGTH_SHORT).show();
             }
         });
     }
