@@ -3,9 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="AzulEscuro">#002A5B</color>
-    <color name="AzulClaro">#005FCE</color>
-    <color name="AzulMeio">#00418D</color>
+    <color name="SplashCinza">#9A9A9A</color>
+    <color name="SplashLetra">#070707</color>
+    <color name="backgroundGeral">#BFBFBF</color>
+    <color name="background2">#E2E1E1</color>
+    <color name="AzulClaro">#8CC5D1</color>
+    <color name="azulcima">#60A4B3</color>
     <color name="Branco">#FFFF</color>
     <color name="BrancoTranparente">#B0FFFFFF</color>
     <color name="Laranja">#FFA012</color>

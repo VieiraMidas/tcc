@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/degrade"
+    android:background="@color/backgroundGeral"
     tools:context=".Cadastrar_Activity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:text="Cadastrar"
             android:textColor="@color/Branco"
-            android:background="@color/colorAccent"/>
+            android:background="@color/AzulClaro"/>
     </LinearLayout>
 
 </LinearLayout>

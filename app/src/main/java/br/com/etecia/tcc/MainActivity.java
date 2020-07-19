@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnImgQRCode, btnSair;
+    ImageButton btnImgQRCode, btnSair, btnBatePapo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +35,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Aplicativo fechado",Toast.LENGTH_SHORT).show();
             }
         });
+        btnBatePapo = findViewById(R.id.btnChat);
+        btnBatePapo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Chat_Activity.class);
+            }
+        });
+
+
     }
 }

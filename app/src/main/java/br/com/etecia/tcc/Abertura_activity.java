@@ -17,8 +17,11 @@ public class Abertura_activity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(),Login_activity.class));
+                Intent intent = new Intent(Abertura_activity.this,
+                        Login_activity.class);
+                startActivity(intent);
+                finish();
             }
-        },10000);
+        },4000);
     }
 }
