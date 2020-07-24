@@ -11,38 +11,39 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnImgQRCode, btnSair, btnBatePapo;
+    ImageButton btnConfig, btnSair, btnBatePapo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnImgQRCode = findViewById(R.id.btnQRCode);
-        btnImgQRCode.setOnClickListener(new View.OnClickListener() {
+        btnConfig = findViewById(R.id.btnbolinhas);
+        btnConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Pagina_Perfil_Activity.class);
+                startActivity(intent);
             }
         });
 
-        btnSair = findViewById(R.id.btnSaida);
+        btnSair = findViewById(R.id.btnsaida);
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.exit(0);
+                Intent intent = new Intent(getApplicationContext(), Login_activity.class);
+                startActivity(intent);
 
-                Toast.makeText(getApplicationContext(),"Aplicativo fechado",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Volte sempre!",Toast.LENGTH_SHORT).show();
             }
         });
-        btnBatePapo = findViewById(R.id.btnChat);
+        btnBatePapo = findViewById(R.id.btnchat);
         btnBatePapo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Chat_Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Chat_Activity.class);
+                startActivity(intent);
             }
         });
-
-
     }
 }

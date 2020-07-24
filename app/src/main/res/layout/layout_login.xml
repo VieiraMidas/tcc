@@ -1,77 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundGeral"
-    android:orientation="vertical"
     tools:context=".Login_activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_margin="20dp">
+        tools:ignore="UselessParent">
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/cabeca"
-            android:layout_marginBottom="25dp"/>
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/cabeca" />
 
         <EditText
             android:id="@+id/txtemaillogin"
-            android:hint="Insira o seu email"
-            android:paddingLeft="20dp"
-            android:textColorHint="@color/BrancoTranparente"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/desenho"
-            android:textSize="30sp"
-            android:layout_marginBottom="30dp"/>
+            android:hint="Insira o seu email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/brancoTranparente"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/txtsenhalogin"
-            android:paddingLeft="20dp"
-            android:hint="Insira a sua senha"
-            android:textColorHint="@color/BrancoTranparente"
             android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/desenho"
-            android:textSize="30sp"
-            android:layout_marginBottom="10dp"/>
+            android:hint="Insira a sua senha"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/brancoTranparente"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            tools:ignore="RtlSymmetry" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="40dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Caso não tenha uma conta "
-            android:textColor="@color/Branco"
-            android:textSize="20sp" />
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caso não tenha uma conta "
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
+
             <TextView
                 android:id="@+id/txtCadastrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cadastre_se"
-                android:textColor="@color/Branco"
-                android:textSize="20sp"
-                android:onClick="abrir_cadastrar_activity"/>
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
         </LinearLayout>
+
         <Button
-            android:id="@+id/btnEntrar"
+            android:id="@+id/btnentrar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@color/azulClaro"
             android:text="Entrar"
-            android:textColor="@color/BrancoTranparente"
-            android:background="@color/AzulClaro"
-            android:textSize="30sp"
-            android:layout_marginBottom="30dp"/>
+            android:textColor="@color/brancoTranparente"
+            android:textSize="30sp" />
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

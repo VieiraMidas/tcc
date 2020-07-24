@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="SplashCinza">#9A9A9A</color>
-    <color name="SplashLetra">#070707</color>
-    <color name="backgroundGeral">#BFBFBF</color>
-    <color name="background2">#E2E1E1</color>
-    <color name="AzulClaro">#8CC5D1</color>
-    <color name="azulcima">#60A4B3</color>
-    <color name="Branco">#FFFF</color>
-    <color name="BrancoTranparente">#B0FFFFFF</color>
-    <color name="Laranja">#FFA012</color>
-    <color name="LaranjaEscuro">#FF7814</color>
+<color name="colorPrimary">#008577</color>
+<color name="colorPrimaryDark">#00574B</color>
+<color name="colorAccent">#D81B60</color>
+<color name="splashCinza">#9A9A9A</color>
+<color name="splashLetra">#070707</color>
+<color name="backgroundGeral">#BFBFBF</color>
+<color name="backgroundDois">#E2E1E1</color>
+<color name="azulClaro">#8CC5D1</color>
+<color name="azulcima">#60A4B3</color>
+<color name="branco">#FFFF</color>
+<color name="brancoTranparente">#B0FFFFFF</color>
+<color name="laranja">#FFA012</color>
+<color name="laranjaEscuro">#FF7814</color>
+<color name="transparente">#00FF7814</color>
 </resources>

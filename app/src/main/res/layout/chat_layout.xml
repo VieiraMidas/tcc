@@ -1,74 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundGeral"
-    android:orientation="vertical"
     tools:context=".Pagina_Perfil_Activity">
 
 
-    <androidx.appcompat.widget.Toolbar
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/azulcima"
-        android:gravity="center"
-        android:padding="10dp">
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:padding="5dp"
-            android:src="@drawable/logococacola" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="Coca-Cola"
-            android:textColor="@color/Branco"
-            android:textSize="20sp" />
-        <ImageButton
-            android:id="@+id/btnHome"
-            android:layout_marginLeft="115dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/casa"/>
+            android:background="@color/azulcima"
+            android:gravity="center"
+            android:padding="10dp">
 
-        <ImageButton
-            android:id="@+id/Config"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/ic_bolinhast"
-            />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="5dp"
+                android:src="@drawable/logococacola" />
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Coca-Cola"
+                android:textColor="@color/branco"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp" />
+
+            <ImageButton
+                android:id="@+id/btnhomechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:background="@drawable/casa"
+                android:layout_marginStart="85dp" />
+
+            <ImageButton
+                android:id="@+id/btnconfigchat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_bolinhast"
+                android:layout_marginStart="10dp" />
+
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            >
-
-        <EditText
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginTop="500dp"
-            android:layout_width="330dp"
-            android:layout_height="40dp"
-            android:background="@drawable/desenho"/>
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/chatdesenho"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="18dp" />
 
             <ImageButton
-                android:id="@+id/btnEnviar"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="495dp"
+                android:id="@+id/btnenviar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginTop="495dp"
+                android:layout_marginRight="80dp"
                 android:background="@drawable/arrow"
-                />
+                android:layout_marginEnd="80dp" />
         </LinearLayout>
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

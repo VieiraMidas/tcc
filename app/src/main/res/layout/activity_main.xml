@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background2"
+    android:background="@color/backgroundDois"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -19,21 +19,23 @@
             android:layout_height="wrap_content"
             android:elevation="4dp"
             android:theme="@style/AppTheme"
-            app:popupTheme="@style/AppTheme">
+            app:popupTheme="@style/AppTheme"
+            tools:targetApi="lollipop">
 
             <ImageButton
-                android:id="@+id/btnSaida"
+                android:id="@+id/btnbolinhas"
                 android:layout_width="30dp"
                 android:layout_height="50dp"
-                android:background="@drawable/sair" />
+                android:background="@drawable/ic_bolinhas" />
 
             <ImageButton
-                android:id="@+id/btnBolinhas"
+                android:id="@+id/btnsaida"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="320dp"
-                android:background="@drawable/ic_bolinhas"
-                android:padding="20dp" />
+                android:layout_marginLeft="270dp"
+                android:background="@drawable/sair"
+                android:padding="20dp"
+                android:layout_marginStart="270dp" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -44,17 +46,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="60dp"
                 android:gravity="center_horizontal"
                 android:text="Toque para utilizar sua Câmera"
-                android:textColor="@color/SplashLetra"
+                android:textColor="@color/splashLetra"
                 android:textSize="30sp" />
 
             <ImageButton
-                android:id="@+id/btnQRCode"
+                android:id="@+id/btnqrcode"
                 android:layout_width="270dp"
                 android:layout_height="270dp"
                 android:layout_gravity="center"
@@ -64,24 +66,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-            <ImageButton
-                android:id="@+id/btnChat"
-                android:layout_marginTop="3dp"
-                android:layout_marginLeft="60dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/chat"/>
+
+                <ImageButton
+                    android:id="@+id/btnchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/chat"
+                    android:layout_marginStart="60dp" />
 
 
-            <ImageButton
-                android:id="@+id/btnMicrofone"
-                android:layout_marginLeft="100dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/microfone"/>
+                <ImageButton
+                    android:id="@+id/btnmicrofone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/microfone"
+                    android:layout_marginStart="100dp" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
-</LinearLayout>
 </LinearLayout>

@@ -13,15 +13,14 @@ public class Abertura_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_abertura);
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Abertura_activity.this,
-                        Login_activity.class);
+                Intent intent = new Intent(Abertura_activity.this, Login_activity.class);
                 startActivity(intent);
                 finish();
             }
         },4000);
+
     }
 }

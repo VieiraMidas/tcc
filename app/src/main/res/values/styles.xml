@@ -11,7 +11,7 @@
     <style name="TemaSemBarra" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/AzulClaro</item>
+        <item name="colorPrimaryDark">@color/azulClaro</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
